@@ -1,0 +1,39 @@
+/* Sidebar styling: fixed vertical menu on the left */
+.sidebar {
+  position: fixed;
+  top: 55px;
+  left: 0;
+  bottom: 0;
+  width: 72px;
+  background-color: white;
+  z-index: 100; 
+}
+
+/* Sidebar link layout: vertically centered, icon + text */
+.sidebar-link {
+  height: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+/* Hover effect: subtle background and rounded corners */
+.sidebar-link:hover {
+  background-color: rgb(235, 235, 235);
+  border-radius: 20px;
+}
+
+/* Icon inside the link */
+.sidebar-link img {
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+/* Text label under the icon */
+.sidebar-link div {
+  font-size: 10px;
+}

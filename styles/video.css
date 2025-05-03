@@ -1,0 +1,92 @@
+/* Thumbnail image fills container */
+.thumbnail {
+  width: 100%;
+}
+
+/* Timestamp overlay in bottom-right of thumbnail */
+.video-time {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+}
+
+/* Title styling for each video */
+.video-title {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* Grid layout: profile picture + video details */
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+/* Creator profile picture */
+.profile-picture {
+  width: 36px;
+  border-radius: 50px;
+}
+
+/* Container for thumbnail with overlay positioning */
+.thumbnail-row {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+/* Author name and view count styling */
+.video-author,
+.video-stats {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+.video-author {
+  margin-bottom: 4px;
+}
+
+/* Responsive grid layout for videos */
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+/* Responsive breakpoints for grid column count */
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  /* Larger font for title and meta info on big screens */
+  .video-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .video-author,
+  .video-stats {
+    font-size: 14px;
+  }
+}

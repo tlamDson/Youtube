@@ -1,2 +1,3 @@
 # Youtube
-Creating the front-end of YouTube
+YouTube Homepage Clone (Responsive UI Project)
+This project is a responsive front-end clone of the YouTube homepage built with HTML and CSS to replicates key layout features such as a fixed header, collapsible sidebar, search bar with interactive focus effect, and a dynamic video grid. The design adjusts across screen sizes using media queries, and includes interactive UI elements like tooltips, hover effects, and notification badges.
